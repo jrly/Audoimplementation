@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jimmy.sounddemo.MainActivity">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="184dp"
+        android:onClick="playButton"
+        android:text="@string/play" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pauseButton"
+        android:text="@string/Pause"
+        android:layout_above="@+id/seekBar"
+        android:layout_toRightOf="@+id/play"
+        android:layout_toEndOf="@+id/play"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/play"
+        android:layout_marginTop="34dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pause"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+</android.widget.RelativeLayout>
